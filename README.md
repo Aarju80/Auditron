@@ -1,4 +1,4 @@
-# Page Pulse
+# Auditron
 
 A small web tool that audits any URL and returns a JSON report on the page's
 technical and SEO health — HTTP status, response time, title, meta
@@ -13,7 +13,7 @@ Software Development).
 ## Project structure
 
 ```
-page-pulse/
+auditron/
 ├── backend/                    # Python + FastAPI API
 │   ├── app/
 │   │   ├── validators/
@@ -57,7 +57,7 @@ page-pulse/
 │   ├── config.js               # set the deployed backend URL here before deploying
 │   └── style.css
 ├── docs/
-│   └── page-pulse-prd.md       # original PRD
+│   └── auditron-prd.md       # original PRD
 ├── .gitignore
 ├── PROGRESS.md                 # PRD progress tracker & agent context bridge
 └── README.md                   # this file
@@ -95,7 +95,7 @@ npx serve .          # or open index.html directly, or use a Live Server extensi
 ```
 
 By default `config.js` points at `http://localhost:8000`. Before deploying,
-update `window.PAGE_PULSE_API_BASE` in `frontend/config.js` to your deployed
+update `window.AUDITRON_API_BASE` in `frontend/config.js` to your deployed
 backend URL.
 
 ## API contract

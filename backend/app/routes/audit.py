@@ -8,7 +8,7 @@ from ..errors import AppError, make_error, to_error_body
 from ..report_builder import run_audit
 
 router = APIRouter()
-logger = logging.getLogger("page_pulse")
+logger = logging.getLogger("auditron")
 
 
 class AuditRequest(BaseModel):

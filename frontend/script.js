@@ -1,4 +1,4 @@
-const API_BASE = window.PAGE_PULSE_API_BASE || 'http://localhost:8000';
+const API_BASE = window.AUDITRON_API_BASE || 'http://localhost:8000';
 
 const form      = document.getElementById('audit-form');
 const urlInput  = document.getElementById('url-input');

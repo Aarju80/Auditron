@@ -1,9 +1,9 @@
-# Page Pulse — Product Requirements & System Design Document
+# Auditron — Product Requirements & System Design Document
 
 **Project:** Digital Heroes Internship Qualification — Role 03/16, Software Development (SDE)
 **Author:** [Your Name]
 **Doc version:** 1.1 (backend stack revised to Python)
-**Covers:** Task A (Build Page Pulse) + Task B (Prove it and explain it)
+**Covers:** Task A (Build Auditron) + Task B (Prove it and explain it)
 
 ---
 

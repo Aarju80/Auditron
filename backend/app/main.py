@@ -12,7 +12,7 @@ logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
 )
-logger = logging.getLogger("page_pulse")
+logger = logging.getLogger("auditron")
 
 
 def _parse_allowed_origins() -> list[str]:
@@ -24,7 +24,7 @@ def _parse_allowed_origins() -> list[str]:
 
 def create_app() -> FastAPI:
     app = FastAPI(
-        title="Page Pulse API",
+        title="Auditron API",
         description=(
             "Audits any public URL and returns a structured JSON report on "
             "that page's HTTP status, load time, SEO basics, and accessibility gaps."
@@ -63,7 +63,7 @@ def create_app() -> FastAPI:
     async def health() -> dict[str, bool]:
         return {"ok": True}
 
-    logger.info("Page Pulse API initialised. Allowed origins: %s", allowed_origins)
+    logger.info("Auditron API initialised. Allowed origins: %s", allowed_origins)
     return app
 
 

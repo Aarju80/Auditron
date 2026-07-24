@@ -9,7 +9,7 @@ from .errors import AppError, make_error
 
 TIMEOUT_SECONDS: float = float(os.environ.get("TIMEOUT_SECONDS", "8"))
 MAX_BYTES: int = int(os.environ.get("MAX_BODY_BYTES", str(5 * 1024 * 1024)))
-USER_AGENT: str = "PagePulse/1.0 (+https://digitalheroesco.com)"
+USER_AGENT: str = "Auditron/1.0 (+https://digitalheroesco.com)"
 
 
 @dataclass(frozen=True)
