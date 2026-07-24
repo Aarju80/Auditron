@@ -1,0 +1,15 @@
+# Web framework & server
+fastapi>=0.111,<1.0
+uvicorn[standard]>=0.30,<1.0
+
+# Async HTTP client — native timeout, streaming, redirect handling
+httpx>=0.27,<1.0
+
+# HTML parser — synchronous, zero compiled deps, easy to test in isolation
+beautifulsoup4>=4.12,<5.0
+
+# Test runner
+pytest>=8.2,<9.0
+# async support required for anyio-based FastAPI test client
+anyio[trio]>=4.0,<5.0
+pytest-anyio>=0.0.0
